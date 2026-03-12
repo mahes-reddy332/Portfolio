@@ -1,0 +1,129 @@
+﻿{
+	"data": [
+		{
+			"id": "repo-amazon-ml",
+			"name": "AmazonMlChallenge_SmartPricePrediction",
+			"createdAt": "2025-10-01T00:00:00Z",
+			"url": "https://github.com/mahes-reddy332/AmazonMlChallenge_SmartPricePrediction",
+			"description": "Amazon ML Challenge 2025 project focused on smart product price prediction using deep learning and feature engineering.",
+			"languages": [
+				{
+					"name": "Jupyter Notebook",
+					"iconifyClass": "simple-icons:jupyter"
+				},
+				{
+					"name": "Python",
+					"iconifyClass": "simple-icons:python"
+				}
+			]
+		},
+		{
+			"id": "repo-off-highway",
+			"name": "Off_Highway_Tata_Elxsi",
+			"createdAt": "2025-04-01T00:00:00Z",
+			"url": "https://github.com/mahes-reddy332/Off_Highway_Tata_Elxsi",
+			"description": "TelIPORT case competition project developed for Tata Elxsi challenge tracks.",
+			"languages": [
+				{
+					"name": "Python",
+					"iconifyClass": "simple-icons:python"
+				}
+			]
+		},
+		{
+			"id": "repo-ai-clinical-trial",
+			"name": "AI-Driven Clinical Trial Data Analytics",
+			"createdAt": "2026-01-01T00:00:00Z",
+			"url": "https://github.com/mahes-reddy332/G-14_Nest_Nitraipur",
+			"description": "Integrated analytics platform for clinical trial data from multi-source systems with real-time dashboards and Agentic AI recommendations.",
+			"languages": [
+				{
+					"name": "Python",
+					"iconifyClass": "simple-icons:python"
+				},
+				{
+					"name": "SQL",
+					"iconifyClass": "simple-icons:mysql"
+				}
+			]
+		},
+		{
+			"id": "repo-ownchatgpt",
+			"name": "LLM-Powered DSA Code Debugging Assistant",
+			"createdAt": "2025-07-01T00:00:00Z",
+			"url": "https://github.com/mahes-reddy332/OwnChatGpt",
+			"description": "LLM-powered assistant for debugging DSA code, explaining logic, and improving problem-solving workflows.",
+			"languages": [
+				{
+					"name": "Python",
+					"iconifyClass": "simple-icons:python"
+				}
+			]
+		},
+		{
+			"id": "repo-zomathon",
+			"name": "Recommendation System",
+			"createdAt": "2025-05-01T00:00:00Z",
+			"url": "https://github.com/mahes-reddy332/Zomathon",
+			"description": "Recommendation system project developed with data-driven modeling and ranking approaches.",
+			"languages": [
+				{
+					"name": "Python",
+					"iconifyClass": "simple-icons:python"
+				}
+			]
+		},
+		{
+			"id": "repo-newsapp",
+			"name": "Newsapp",
+			"createdAt": "2025-08-01T00:00:00Z",
+			"url": "https://github.com/mahes-reddy332/Newsapp",
+			"description": "JavaScript news application consuming real-time APIs with category filtering and clean UI.",
+			"languages": [
+				{
+					"name": "JavaScript",
+					"iconifyClass": "simple-icons:javascript"
+				}
+			]
+		},
+		{
+			"id": "repo-feeling-cnn",
+			"name": "FeelingDetectionUsingCNN",
+			"createdAt": "2025-01-01T00:00:00Z",
+			"url": "https://github.com/mahes-reddy332/FeelingDetectionUsingCNN",
+			"description": "Convolutional neural network project for emotion and sentiment style classification tasks.",
+			"languages": [
+				{
+					"name": "Python",
+					"iconifyClass": "simple-icons:python"
+				}
+			]
+		},
+		{
+			"id": "repo-netflix-sql",
+			"name": "NetflixContentAnalysis",
+			"createdAt": "2025-09-01T00:00:00Z",
+			"url": "https://github.com/mahes-reddy332/NetflixContentAnalysis",
+			"description": "SQL-based exploratory analysis of Netflix content trends, genres, ratings, and release patterns.",
+			"languages": [
+				{
+					"name": "SQL",
+					"iconifyClass": "simple-icons:mysql"
+				}
+			]
+		},
+		{
+			"id": "repo-reaction-kinetics",
+			"name": "Reaction_Kinetics_Simulator",
+			"createdAt": "2025-03-01T00:00:00Z",
+			"url": "https://github.com/mahes-reddy332/Reaction_Kinetics_Simulator",
+			"description": "Simulation project for reaction kinetics and chemical engineering mini-project experimentation.",
+			"languages": [
+				{
+					"name": "Python",
+					"iconifyClass": "simple-icons:python"
+				}
+			]
+		}
+	]
+}
