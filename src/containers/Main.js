@@ -30,8 +30,15 @@ export default class Main extends Component {
     }
   }
   render() {
+    const routerBaseName = process.env.PUBLIC_URL
+      ? new URL(process.env.PUBLIC_URL, window.location.origin).pathname.replace(
+          /\/$/,
+          ""
+        ) || "/"
+      : "/";
+
     return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter basename={routerBaseName}>
         <Switch>
           <Route
             path="/"
