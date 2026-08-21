@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f090b4ad3af6dae8cc28183a717352fc",
+    "revision": "ba786cc6f6738d3586f2a60b1df7139a",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "0389f54f612f7cda7a29",
+    "revision": "ea8b1ea38766d9fbb2d7",
     "url": "/Portfolio/static/css/main.8ced5689.chunk.css"
   },
   {
-    "revision": "c56e39e8618d7bf0372e",
-    "url": "/Portfolio/static/js/2.56bb90c4.chunk.js"
+    "revision": "87dc1107992d0173bf86",
+    "url": "/Portfolio/static/js/2.13c21b66.chunk.js"
   },
   {
-    "revision": "0389f54f612f7cda7a29",
-    "url": "/Portfolio/static/js/main.7a40102c.chunk.js"
+    "revision": "ea8b1ea38766d9fbb2d7",
+    "url": "/Portfolio/static/js/main.ed3ed0a4.chunk.js"
   },
   {
     "revision": "0792ebc6f8568e31125f",
@@ -202,6 +202,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "571a8584e69ecfbe326c8b8385fbbf54",
     "url": "/Portfolio/static/media/iiitk_logo.571a8584.png"
+  },
+  {
+    "revision": "779eb42d40efc6402096554d9336af42",
+    "url": "/Portfolio/static/media/iitm_logo.779eb42d.svg"
   },
   {
     "revision": "29152cf756a1facead5393c32e373371",
