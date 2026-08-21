@@ -12,7 +12,7 @@ const greeting = {
   title: "Mahesh Reddy Mula",
   logo_name: "MaheshReddy Mula",
   nickname: "Mula Venkata Maheshwara Reddy",
-  subTitle: "A passionate Data Science student who thrives on building intelligent ML/DL applications, analyzing complex datasets, and solving challenging problems through data-driven insights.",
+  subTitle: "Data Science student focused on Machine Learning, LLMs, Generative AI, and Agentic AI, building intelligent AI systems, RAG pipelines, and scalable data-driven applications.",
   resumeLink: "/resume",
   portfolio_repository: "https://github.com/mahes-reddy332",
   githubProfile: "https://github.com/mahes-reddy332",
