@@ -1,51 +1,79 @@
 import React, { Component } from "react";
 import ExperienceCard from "../../components/experienceCard/ExperienceCard.js";
 import "./ExperienceAccordion.css";
-import { Accordion, Panel } from "baseui/accordion";
 
 class ExperienceAccordion extends Component {
+  constructor(props) {
+    super(props);
+    // Keep Positions of Responsibility open by default when available.
+    const defaultIndex = props.sections && props.sections.length > 1 ? 1 : 0;
+    this.state = { activeIndex: defaultIndex };
+  }
+
+  handleSectionClick = (index) => {
+    this.setState((state) => ({
+      activeIndex: state.activeIndex === index ? -1 : index,
+    }));
+  };
+
   render() {
     const theme = this.props.theme;
+    const sections = this.props.sections || [];
+
     return (
       <div className="experience-accord">
-        <Accordion>
-          {this.props.sections.map((section) => {
-            return (
-              <Panel
-                className="accord-panel"
-                title={section["title"]}
-                key={section["title"]}
-                overrides={{
-                  Header: {
-                    style: () => ({
-                      backgroundColor: `${theme.body}`,
-                      border: `1px solid`,
-                      borderRadius: `5px`,
-                      borderColor: `${theme.headerColor}`,
-                      marginBottom: `3px`,
-                      fontFamily: "Google Sans Regular",
-                      color: `${theme.text}`,
-                      ":hover": {
-                        color: `${theme.secondaryText}`,
-                      },
-                    }),
-                  },
-                  Content: {
-                    style: () => ({
-                      backgroundColor: `${theme.body}`,
-                    }),
-                  },
+        {sections.map((section, index) => {
+          const isOpen = this.state.activeIndex === index;
+
+          return (
+            <div key={section.title} className="accord-panel">
+              <button
+                type="button"
+                className="experience-accordion-header"
+                onClick={() => this.handleSectionClick(index)}
+                aria-expanded={isOpen}
+                style={{
+                  width: "100%",
+                  textAlign: "left",
+                  backgroundColor: theme.body,
+                  border: "1px solid",
+                  borderRadius: "5px",
+                  borderColor: theme.headerColor,
+                  marginBottom: "3px",
+                  fontFamily: "Google Sans Regular",
+                  color: theme.text,
+                  cursor: "pointer",
+                  padding: "16px 20px",
+                  fontSize: "16px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
                 }}
               >
-{section["experiences"].map((experience,index) => {
-                  return (
-                    <ExperienceCard index={index} totalCards={section["experiences"].length} experience={experience} theme={theme} />
-                  );
-                })}
-              </Panel>
-            );
-          })}
-        </Accordion>
+                <span>{section.title}</span>
+                <span aria-hidden="true">{isOpen ? "−" : "+"}</span>
+              </button>
+
+              {isOpen && (
+                <div
+                  style={{
+                    backgroundColor: theme.body,
+                  }}
+                >
+                  {section.experiences.map((experience, experienceIndex) => (
+                    <ExperienceCard
+                      key={`${section.title}-${experience.title}-${experienceIndex}`}
+                      index={experienceIndex}
+                      totalCards={section.experiences.length}
+                      experience={experience}
+                      theme={theme}
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
+          );
+        })}
       </div>
     );
   }
