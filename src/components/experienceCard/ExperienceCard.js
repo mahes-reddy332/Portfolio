@@ -8,6 +8,13 @@ class ExperienceCard extends Component {
     const index = this.props.index;
     const totalCards = this.props.totalCards;
     const theme = this.props.theme;
+
+    // Use a normal URL for the IIT Madras logo so opening the internship
+    // accordion cannot fail because of a bundled asset lookup.
+    const logoSrc = experience["company"] === "Indian Institute of Technology Madras"
+      ? "https://study.iitm.ac.in/assets/img/logo.png"
+      : require(`../../assets/images/${experience["logo_path"]}`);
+
     return (
       <div
         className="experience-list-item"
@@ -17,8 +24,8 @@ class ExperienceCard extends Component {
           <div className="experience-card-logo-div">
             <img
               className="experience-card-logo"
-              src={require(`../../assets/images/${experience["logo_path"]}`)}
-              alt=""
+              src={logoSrc}
+              alt={`${experience["company"]} logo`}
             />
           </div>
         </Fade>
@@ -49,7 +56,7 @@ class ExperienceCard extends Component {
             <div
               className="arrow-left"
               style={{ borderRight: `10px solid ${theme.body}` }}
-            ></div>
+            />
             <div
               className="experience-card"
               style={{ background: `${theme.body}` }}
