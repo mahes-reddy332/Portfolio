@@ -1,243 +1,138 @@
 /* Change this file to get your personal Porfolio */
 
-// Website related settings
-const settings = {
-  isSplash: true, // Change this to false if you don't want Splash screen.
-};
+const settings = { isSplash: true };
 
-//SEO Related settings
 const seo = {
   title: "Mahesh Reddy's Portfolio",
-  description:
-    "A passionate Data Science student specializing in Machine Learning and Deep Learning, building intelligent and data-driven applications that create real-world impact.",
-  og: {
-    title: "Mahesh Reddy Mula Portfolio",
-    type: "website",
-    url: "https://github.com/mahes-reddy332",
-  },
+  description: "A passionate Data Science student specializing in Machine Learning, Data Analytics, Deep Learning and AI, building intelligent and data-driven applications.",
+  og: { title: "Mahesh Reddy Mula Portfolio", type: "website", url: "https://github.com/mahes-reddy332" },
 };
 
-//Home Page
 const greeting = {
   title: "Mahesh Reddy Mula",
   logo_name: "MaheshReddy Mula",
   nickname: "Mula Venkata Maheshwara Reddy",
-  subTitle:
-    "A passionate Data Science student who thrives on building intelligent ML/DL applications, analyzing complex datasets, and solving challenging problems through data-driven insights.",
+  subTitle: "A passionate Data Science student who thrives on building intelligent ML/DL applications, analyzing complex datasets, and solving challenging problems through data-driven insights.",
   resumeLink: "/resume",
   portfolio_repository: "https://github.com/mahes-reddy332",
   githubProfile: "https://github.com/mahes-reddy332",
 };
 
 const socialMediaLinks = [
-  {
-    name: "Github",
-    link: "https://github.com/mahes-reddy332",
-    fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
-    backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
-  },
-  {
-    name: "LinkedIn",
-    link: "https://www.linkedin.com/in/mahesh-reddy-mula-369z/",
-    fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
-    backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
-  },
-  {
-    name: "Gmail",
-    link: "mailto:mahesreddymula@gmail.com",
-    fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
-    backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
-  },
+  { name: "Github", link: "https://github.com/mahes-reddy332", fontAwesomeIcon: "fa-github", backgroundColor: "#181717" },
+  { name: "LinkedIn", link: "https://www.linkedin.com/in/mahesh-reddy-mula-369z/", fontAwesomeIcon: "fa-linkedin-in", backgroundColor: "#0077B5" },
+  { name: "Gmail", link: "mailto:mahesreddymula@gmail.com", fontAwesomeIcon: "fa-google", backgroundColor: "#D14836" },
 ];
 
+// Skills Page
 const skills = {
   data: [
     {
       title: "Machine Learning & Data Science",
       fileName: "DataScienceImg",
       skills: [
-        "⚡ Building end-to-end ML pipelines for classification, regression and deep learning tasks",
-        "⚡ Experience with CNNs, Transformers, and ensemble methods for real-world prediction challenges",
-        "⚡ Participated in Amazon ML Challenge 2025, ranked 819th out of 82,500+ teams",
+        "⚡ PyTorch, TensorFlow/Keras, Scikit-learn, PySpark, Pandas and NumPy",
+        "⚡ CNNs, RNNs, Transformers, Transfer Learning and supervised/unsupervised learning",
+        "⚡ Ensemble methods including XGBoost, LightGBM and CatBoost for real-world prediction problems",
       ],
       softwareSkills: [
-        {
-          skillName: "Python",
-          fontAwesomeClassname: "ion-logo-python",
-          style: {
-            backgroundColor: "transparent",
-            color: "#3776AB",
-          },
-        },
-        {
-          skillName: "Tensorflow",
-          fontAwesomeClassname: "logos-tensorflow",
-          style: {
-            backgroundColor: "transparent",
-          },
-        },
-        {
-          skillName: "Keras",
-          fontAwesomeClassname: "simple-icons:keras",
-          style: {
-            backgroundColor: "white",
-            color: "#D00000",
-          },
-        },
-        {
-          skillName: "Scikit-learn",
-          fontAwesomeClassname: "simple-icons:scikitlearn",
-          style: {
-            backgroundColor: "transparent",
-            color: "#F7931E",
-          },
-        },
-        {
-          skillName: "NumPy",
-          fontAwesomeClassname: "simple-icons:numpy",
-          style: {
-            backgroundColor: "transparent",
-            color: "#013243",
-          },
-        },
-        {
-          skillName: "Pandas",
-          fontAwesomeClassname: "simple-icons:pandas",
-          style: {
-            backgroundColor: "transparent",
-            color: "#150458",
-          },
-        },
+        { skillName: "Python", fontAwesomeClassname: "ion-logo-python", style: { backgroundColor: "transparent", color: "#3776AB" } },
+        { skillName: "PyTorch", fontAwesomeClassname: "simple-icons:pytorch", style: { color: "#EE4C2C" } },
+        { skillName: "TensorFlow", fontAwesomeClassname: "logos-tensorflow", style: { backgroundColor: "transparent" } },
+        { skillName: "Scikit-learn", fontAwesomeClassname: "simple-icons:scikitlearn", style: { color: "#F7931E" } },
+        { skillName: "PySpark", fontAwesomeClassname: "simple-icons:apachespark", style: { color: "#E25A1C" } },
+        { skillName: "Pandas", fontAwesomeClassname: "simple-icons:pandas", style: { color: "#150458" } },
+        { skillName: "NumPy", fontAwesomeClassname: "simple-icons:numpy", style: { color: "#013243" } },
       ],
     },
     {
-      title: "Web Development & Programming",
-      fileName: "FullStackImg",
-      skills: [
-        "⚡ Building responsive web applications using HTML, CSS, JavaScript and ReactJS",
-        "⚡ Developed API-based news applications and AI-powered chatbots using OpenAI API",
-        "⚡ Proficient in C++ and Python for competitive programming and algorithmic problem solving",
-      ],
-      softwareSkills: [
-        {
-          skillName: "HTML5",
-          fontAwesomeClassname: "simple-icons:html5",
-          style: {
-            color: "#E34F26",
-          },
-        },
-        {
-          skillName: "CSS3",
-          fontAwesomeClassname: "fa-css3",
-          style: {
-            color: "#1572B6",
-          },
-        },
-        {
-          skillName: "JavaScript",
-          fontAwesomeClassname: "simple-icons:javascript",
-          style: {
-            backgroundColor: "#000000",
-            color: "#F7DF1E",
-          },
-        },
-        {
-          skillName: "ReactJS",
-          fontAwesomeClassname: "simple-icons:react",
-          style: {
-            color: "#61DAFB",
-          },
-        },
-        {
-          skillName: "C++",
-          fontAwesomeClassname: "simple-icons:cplusplus",
-          style: {
-            color: "#00599C",
-          },
-        },
-        {
-          skillName: "Git",
-          fontAwesomeClassname: "simple-icons:git",
-          style: {
-            color: "#F05032",
-          },
-        },
-      ],
-    },
-    {
-      title: "Data Analysis & Visualization",
+      title: "Data Analytics & Business Intelligence",
       fileName: "CloudInfraImg",
       skills: [
-        "⚡ Exploratory data analysis with Pandas, NumPy, Matplotlib and Seaborn",
-        "⚡ Developed interactive Power BI dashboards to track KPIs and business metrics",
-        "⚡ Expert-level SQL for complex queries, joins, window functions, and data modeling",
+        "⚡ Exploratory Data Analysis, statistical analysis, data cleaning, feature engineering and data visualization",
+        "⚡ Advanced Excel, Tableau and Power BI for KPI dashboards, reporting and business insights",
+        "⚡ SQL for complex joins, window functions, aggregations, relational data modeling and analytical queries",
       ],
       softwareSkills: [
-        {
-          skillName: "SQL",
-          fontAwesomeClassname: "simple-icons:mysql",
-          style: {
-            color: "#4479A1",
-          },
-        },
-        {
-          skillName: "Power BI",
-          fontAwesomeClassname: "simple-icons:powerbi",
-          style: {
-            color: "#F2C811",
-          },
-        },
-        {
-          skillName: "Matplotlib",
-          fontAwesomeClassname: "simple-icons:plotly",
-          style: {
-            color: "#3F4F75",
-          },
-        },
-        {
-          skillName: "Google Cloud",
-          fontAwesomeClassname: "simple-icons:googlecloud",
-          style: {
-            color: "#4285F4",
-          },
-        },
-        {
-          skillName: "Jupyter",
-          fontAwesomeClassname: "simple-icons:jupyter",
-          style: {
-            color: "#F37626",
-          },
-        },
-        {
-          skillName: "VS Code",
-          fontAwesomeClassname: "simple-icons:visualstudiocode",
-          style: {
-            color: "#007ACC",
-          },
-        },
-        {
-          skillName: "MS Excel",
-          fontAwesomeClassname: "simple-icons:microsoftexcel",
-          style: {
-            color: "#217346",
-          },
-        },
+        { skillName: "SQL", fontAwesomeClassname: "simple-icons:mysql", style: { color: "#4479A1" } },
+        { skillName: "Power BI", fontAwesomeClassname: "simple-icons:powerbi", style: { color: "#F2C811" } },
+        { skillName: "Tableau", fontAwesomeClassname: "simple-icons:tableau", style: { color: "#E97627" } },
+        { skillName: "Excel", fontAwesomeClassname: "simple-icons:microsoftexcel", style: { color: "#217346" } },
+        { skillName: "Pandas", fontAwesomeClassname: "simple-icons:pandas", style: { color: "#150458" } },
+        { skillName: "Matplotlib", fontAwesomeClassname: "simple-icons:matplotlib", style: { color: "#11557C" } },
+      ],
+    },
+    {
+      title: "LLMs & Agentic AI",
+      fileName: "CloudInfraImg",
+      skills: [
+        "⚡ LangChain, LangGraph, RAG, Multi-Agent Systems and Model Context Protocol (MCP)",
+        "⚡ LoRA/PEFT, prompt engineering, tool calling and Human-in-the-Loop (HITL)",
+        "⚡ OpenAI and Groq APIs for AI-powered applications and agents",
+      ],
+      softwareSkills: [
+        { skillName: "LangChain", fontAwesomeClassname: "simple-icons:langchain", style: { color: "#1C3C3C" } },
+        { skillName: "LangGraph", fontAwesomeClassname: "simple-icons:graphql", style: { color: "#E10098" } },
+        { skillName: "OpenAI", fontAwesomeClassname: "simple-icons:openai", style: { color: "#000000" } },
+        { skillName: "RAG", fontAwesomeClassname: "simple-icons:databricks", style: { color: "#FF3621" } },
+      ],
+    },
+    {
+      title: "NLP & Computer Vision",
+      fileName: "DesignImg",
+      skills: [
+        "⚡ Transformers including BERT and GPT, text/image classification, semantic search and Named Entity Recognition (NER)",
+        "⚡ OpenCV, image processing and image segmentation",
+      ],
+      softwareSkills: [
+        { skillName: "BERT / GPT", fontAwesomeClassname: "simple-icons:huggingface", style: { color: "#FFD21E" } },
+        { skillName: "OpenCV", fontAwesomeClassname: "simple-icons:opencv", style: { color: "#5C3EE8" } },
+        { skillName: "Python", fontAwesomeClassname: "ion-logo-python", style: { color: "#3776AB" } },
+      ],
+    },
+    {
+      title: "Programming, Software & Cloud",
+      fileName: "FullStackImg",
+      skills: [
+        "⚡ Python, C/C++, JavaScript, TypeScript, HTML/CSS, React 19 and FastAPI",
+        "⚡ REST APIs, Async I/O, Kafka, Tailwind CSS and Vite",
+        "⚡ GCP, Docker, Git/GitHub, CI/CD and Linux",
+      ],
+      softwareSkills: [
+        { skillName: "Python", fontAwesomeClassname: "ion-logo-python", style: { color: "#3776AB" } },
+        { skillName: "C++", fontAwesomeClassname: "simple-icons:cplusplus", style: { color: "#00599C" } },
+        { skillName: "TypeScript", fontAwesomeClassname: "simple-icons:typescript", style: { color: "#3178C6" } },
+        { skillName: "React", fontAwesomeClassname: "simple-icons:react", style: { color: "#61DAFB" } },
+        { skillName: "FastAPI", fontAwesomeClassname: "simple-icons:fastapi", style: { color: "#009688" } },
+        { skillName: "Kafka", fontAwesomeClassname: "simple-icons:apachekafka", style: { color: "#231F20" } },
+        { skillName: "Docker", fontAwesomeClassname: "simple-icons:docker", style: { color: "#2496ED" } },
+        { skillName: "GitHub", fontAwesomeClassname: "simple-icons:github", style: { color: "#181717" } },
+        { skillName: "Google Cloud", fontAwesomeClassname: "simple-icons:googlecloud", style: { color: "#4285F4" } },
+      ],
+    },
+    {
+      title: "Languages, Databases & Data Engineering",
+      fileName: "FullStackImg",
+      skills: [
+        "⚡ SQL with PostgreSQL and MySQL, relational data modeling and ETL pipelines",
+        "⚡ ChromaDB and FAISS vector databases for semantic search and RAG applications",
+        "⚡ JavaScript, TypeScript, HTML/CSS and Python for data and application development",
+      ],
+      softwareSkills: [
+        { skillName: "PostgreSQL", fontAwesomeClassname: "simple-icons:postgresql", style: { color: "#4169E1" } },
+        { skillName: "MySQL", fontAwesomeClassname: "simple-icons:mysql", style: { color: "#4479A1" } },
+        { skillName: "ChromaDB", fontAwesomeClassname: "simple-icons:databricks", style: { color: "#FF3621" } },
+        { skillName: "FAISS", fontAwesomeClassname: "simple-icons:meta", style: { color: "#0668E1" } },
+        { skillName: "JavaScript", fontAwesomeClassname: "simple-icons:javascript", style: { color: "#F7DF1E" } },
+        { skillName: "TypeScript", fontAwesomeClassname: "simple-icons:typescript", style: { color: "#3178C6" } },
       ],
     },
   ],
 };
 
-// Education Page
 const competitiveSites = {
   competitiveSites: [
-    {
-      siteName: "HackerRank",
-      iconifyClassname: "simple-icons:hackerrank",
-      style: {
-        color: "#2EC866",
-      },
-      profileLink: "https://www.hackerrank.com/mahesreddymula",
-    },
+    { siteName: "HackerRank", iconifyClassname: "simple-icons:hackerrank", style: { color: "#2EC866" }, profileLink: "https://www.hackerrank.com/mahesreddymula" },
   ],
 };
 
@@ -250,11 +145,7 @@ const degrees = {
       logo_url: "https://www.nitrr.ac.in/images/nitrr.gif",
       alt_name: "NIT Raipur",
       duration: "2023 - Expected Aug. 2027",
-      descriptions: [
-        "• Pursuing core engineering subjects alongside a strong foundation in data science and computing.",
-        "• Maintaining a CGPA of 8.77/10.0 reflecting consistent academic excellence.",
-        "• Serving as Tech Executive at the Entrepreneurship Cell, driving tech-driven initiatives.",
-      ],
+      descriptions: ["• Pursuing core engineering subjects alongside a strong foundation in data science and computing.", "• Maintaining a CGPA of 8.77/10.0 reflecting consistent academic excellence.", "• Serving as Tech Executive at the Entrepreneurship Cell, driving tech-driven initiatives."],
       website_link: "https://www.nitrr.ac.in/",
     },
     {
@@ -264,11 +155,7 @@ const degrees = {
       logo_url: "https://study.iitm.ac.in/assets/img/logo.png",
       alt_name: "IIT Madras",
       duration: "2023 - Expected Mar. 2027",
-      descriptions: [
-        "• Studying advanced topics in Machine Learning, Deep Learning, Statistics and Data Engineering.",
-        "• Maintaining a CGPA of 7.50/10.0 in this rigorous online degree program.",
-        "• Served as Web Operations Head for Bandipur House, migrating the club website to a custom-coded platform.",
-      ],
+      descriptions: ["• Studying advanced topics in Machine Learning, Deep Learning, Statistics and Data Engineering.", "• Maintaining a CGPA of 7.50/10.0 in this rigorous online degree program.", "• Served as Web Operations Head for Bandipur House, migrating the club website to a custom-coded platform."],
       website_link: "https://study.iitm.ac.in/",
     },
   ],
@@ -276,42 +163,33 @@ const degrees = {
 
 const certifications = {
   certifications: [
-    {
-      title: "Advanced ML Algorithms",
-      subtitle: "- Coursera",
-      logo_path: "coursera_logo.png",
-      certificate_link: "https://www.coursera.org/",
-      alt_name: "Coursera",
-      color_code: "#2A73CC",
-    },
-    {
-      title: "Supervised Machine Learning",
-      subtitle: "- Coursera",
-      logo_path: "coursera_logo.png",
-      certificate_link: "https://www.coursera.org/",
-      alt_name: "Coursera",
-      color_code: "#2A73CC",
-    },
-    {
-      title: "5-Star SQL Badge",
-      subtitle: "- HackerRank (Top 5%)",
-      logo_path: "github_logo.png",
-      certificate_link: "https://www.hackerrank.com/mahesreddymula",
-      alt_name: "HackerRank",
-      color_code: "#2EC86699",
-    },
+    { title: "Advanced ML Algorithms", subtitle: "- Coursera", logo_path: "coursera_logo.png", certificate_link: "https://www.coursera.org/", alt_name: "Coursera", color_code: "#2A73CC" },
+    { title: "Supervised Machine Learning", subtitle: "- Coursera", logo_path: "coursera_logo.png", certificate_link: "https://www.coursera.org/", alt_name: "Coursera", color_code: "#2A73CC" },
+    { title: "5-Star SQL Badge", subtitle: "- HackerRank (Top 5%)", logo_path: "github_logo.png", certificate_link: "https://www.hackerrank.com/mahesreddymula", alt_name: "HackerRank", color_code: "#2EC86699" },
   ],
 };
 
-
-// Experience Page
 const experience = {
   title: "Experience",
-  subtitle: "Positions of Responsibility & Volunteerships",
-  description:
-    "As a dual-degree student at NIT Raipur and IIT Madras, I have taken on leadership roles in technical and entrepreneurial clubs, driving impactful initiatives and contributing to campus communities.",
+  subtitle: "Work, Internship and Volunteership",
+  description: "As a dual-degree student at NIT Raipur and IIT Madras, I have taken on leadership roles in technical and entrepreneurial clubs and completed research-focused internship experience.",
   header_image_path: "experience.svg",
   sections: [
+    {
+      title: "Internships",
+      experiences: [
+        {
+          title: "Research Intern — AI-Driven Biomaterials Analysis",
+          company: "Indian Institute of Technology Madras",
+          company_url: "https://www.iitm.ac.in/",
+          logo_path: "iitm_logo.svg",
+          duration: "May 2025 – Jul 2025",
+          location: "Chennai, Tamil Nadu, India",
+          description: "Built an automated SEM image-analysis pipeline (OpenCV, scikit-image) using CLAHE and watershed segmentation to extract nanorod morphology and PCA orientation angles for 200+ particles/image. Fitted Power-Law & Cross rheology models via nonlinear regression (SciPy) and developed a Bayesian optimization framework (GP surrogate + Expected Improvement) to predict optimal bioink composition for extrusion-based 3D bioprinting.",
+          color: "#800000",
+        },
+      ],
+    },
     {
       title: "Positions of Responsibility",
       work: true,
@@ -323,8 +201,7 @@ const experience = {
           logo_path: "github_logo.png",
           duration: "2024 - 2025",
           location: "IIT Madras (Online)",
-          description:
-            "Migrated the club website from Google Sites to a custom-coded platform, significantly improving the user experience. Developed a dedicated election participants webpage for fair and transparent representation.",
+          description: "Migrated the club website from Google Sites to a custom-coded platform, significantly improving the user experience. Developed a dedicated election participants webpage for fair and transparent representation.",
           color: "#006EFF",
         },
         {
@@ -334,8 +211,7 @@ const experience = {
           logo_path: "dsc_logo.png",
           duration: "Mar. 2023 - Sep. 2025",
           location: "Raipur, Chhattisgarh",
-          description:
-            "Redesigned and updated the E-Cell website with an improved user interface and enhanced features. Organized technical events and workshops to foster entrepreneurship awareness among students.",
+          description: "Redesigned and updated the E-Cell website with an improved user interface and enhanced features. Organized technical events and workshops to foster entrepreneurship awareness among students.",
           color: "#0C9D58",
         },
       ],
@@ -343,68 +219,20 @@ const experience = {
   ],
 };
 
-// Projects Page
 const projectsHeader = {
   title: "Projects",
-  description:
-    "Featured projects are prioritized by impact and relevance: Machine Learning, Deep Learning, and challenge projects first. You can find additional lower-priority projects on my GitHub profile.",
+  description: "Featured projects are prioritized by impact and relevance: Machine Learning, Deep Learning, Data Analytics, and challenge projects first. You can find additional lower-priority projects on my GitHub profile.",
   avatar_image_path: "projects_image.svg",
 };
 
-const publicationsHeader = {
-  title: "Achievements",
-  description: "Competitions, certifications and recognitions I have earned.",
-  avatar_image_path: "projects_image.svg",
-};
+const publicationsHeader = { title: "Achievements", description: "Competitions, certifications and recognitions I have earned.", avatar_image_path: "projects_image.svg" };
+const publications = { data: [] };
 
-const publications = {
-  data: [],
-};
-
-// Contact Page
 const contactPageData = {
-  contactSection: {
-    title: "Contact Me",
-    profile_image_path: "developerActivity.svg",
-    description:
-      "I am available on GitHub and LinkedIn. Feel free to reach out — I will reply within 24 hours. I can help you with Machine Learning, Data Analysis, SQL, Python, and Web Development.",
-  },
-  blogSection: {
-    title: "GitHub",
-    subtitle:
-      "I love building projects and sharing them on GitHub. Check out my repositories for ML models, data analysis notebooks, and web apps.",
-    link: "https://github.com/mahes-reddy332",
-    avatar_image_path: "ghibli_mahesh.jpg",
-  },
-  addressSection: {
-    title: "Location",
-    subtitle: "GE Road, Raipur, Chhattisgarh 492010, India",
-    locality: "Raipur",
-    country: "India",
-    region: "Chhattisgarh",
-    postalCode: "492010",
-    streetAddress: "GE Road",
-    avatar_image_path: "address_image.svg",
-    location_map_link: "https://maps.app.goo.gl/rAD6xN7q3YnW9GxF7",
-  },
-  phoneSection: {
-    title: "",
-    subtitle: "",
-  },
+  contactSection: { title: "Contact Me", profile_image_path: "developerActivity.svg", description: "I am available on GitHub and LinkedIn. Feel free to reach out — I will reply within 24 hours. I can help you with Machine Learning, Data Analysis, SQL, Python, and Web Development." },
+  blogSection: { title: "GitHub", subtitle: "I love building projects and sharing them on GitHub. Check out my repositories for ML models, data analysis notebooks, and web apps.", link: "https://github.com/mahes-reddy332", avatar_image_path: "ghibli_mahesh.jpg" },
+  addressSection: { title: "Location", subtitle: "GE Road, Raipur, Chhattisgarh 492010, India", locality: "Raipur", country: "India", region: "Chhattisgarh", postalCode: "492010", streetAddress: "GE Road", avatar_image_path: "address_image.svg", location_map_link: "https://maps.app.goo.gl/rAD6xN7q3YnW9GxF7" },
+  phoneSection: { title: "", subtitle: "" },
 };
 
-export {
-  settings,
-  seo,
-  greeting,
-  socialMediaLinks,
-  skills,
-  competitiveSites,
-  degrees,
-  certifications,
-  experience,
-  projectsHeader,
-  publicationsHeader,
-  publications,
-  contactPageData,
-};
+export { settings, seo, greeting, socialMediaLinks, skills, competitiveSites, degrees, certifications, experience, projectsHeader, publicationsHeader, publications, contactPageData };
